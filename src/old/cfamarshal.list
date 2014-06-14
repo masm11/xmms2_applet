@@ -1,0 +1,3 @@
+# $Id: cfamarshal.list 246 2005-06-22 00:49:05Z masm $
+
+VOID:BOOLEAN,UINT64

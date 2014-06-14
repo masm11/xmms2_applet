@@ -1,0 +1,17 @@
+
+/* Generated data (by glib-mkenums) */
+
+{ CFA_DESIGN_FONT_NAME_AUTO, "CFA_DESIGN_FONT_NAME_AUTO", "font-name-auto"},
+{ CFA_DESIGN_BG_COLOR_AUTO, "CFA_DESIGN_BG_COLOR_AUTO", "bg-color-auto"},
+{ CFA_DESIGN_FONT_COLOR_AUTO, "CFA_DESIGN_FONT_COLOR_AUTO", "font-color-auto"},
+{ CFA_DESIGN_ARC_COLOR_AUTO, "CFA_DESIGN_ARC_COLOR_AUTO", "arc-color-auto"},
+{ CFA_DESIGN_HAND_COLOR_AUTO, "CFA_DESIGN_HAND_COLOR_AUTO", "hand-color-auto"},
+{ CFA_DESIGN_FONT_NAME_MANUAL, "CFA_DESIGN_FONT_NAME_MANUAL", "font-name-manual"},
+{ CFA_DESIGN_BG_COLOR_MANUAL, "CFA_DESIGN_BG_COLOR_MANUAL", "bg-color-manual"},
+{ CFA_DESIGN_FONT_COLOR_MANUAL, "CFA_DESIGN_FONT_COLOR_MANUAL", "font-color-manual"},
+{ CFA_DESIGN_ARC_COLOR_MANUAL, "CFA_DESIGN_ARC_COLOR_MANUAL", "arc-color-manual"},
+{ CFA_DESIGN_HAND_COLOR_MANUAL, "CFA_DESIGN_HAND_COLOR_MANUAL", "hand-color-manual"},
+{ CFA_DESIGN_DRAG_COLOR_MANUAL, "CFA_DESIGN_DRAG_COLOR_MANUAL", "drag-color-manual"},
+
+/* Generated data ends here */
+

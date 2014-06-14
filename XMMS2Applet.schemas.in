@@ -1,0 +1,60 @@
+<gconfschemafile>
+<schemalist>
+
+<schema>
+	<key>/schemas/apps/xmms2_applet/prefs/size</key>
+	<owner>xmms2-applet</owner>
+	<type>int</type>
+	<default>48</default>
+	<locale name="C">
+		<short>applet size</short>
+		<long>applet size</long>
+	</locale>
+</schema>
+
+<schema>
+	<key>/schemas/apps/xmms2_applet/prefs/scroll_dx</key>
+	<owner>xmms2-applet</owner>
+	<type>int</type>
+	<default>1</default>
+	<locale name="C">
+		<short>scroll step</short>
+		<long>scroll step</long>
+	</locale>
+</schema>
+
+<schema>
+	<key>/schemas/apps/xmms2_applet/prefs/scroll_msec</key>
+	<owner>xmms2-applet</owner>
+	<type>int</type>
+	<default>50</default>
+	<locale name="C">
+		<short>scroll interval</short>
+		<long>scroll interval</long>
+	</locale>
+</schema>
+
+<schema>
+	<key>/schemas/apps/xmms2_applet/prefs/path_specified</key>
+	<owner>xmms2-applet</owner>
+	<type>bool</type>
+	<default>false</default>
+	<locale name="C">
+		<short>whether xmms2 path specified</short>
+		<long>whether xmms2 path specified.</long>
+	</locale>
+</schema>
+
+<schema>
+	<key>/schemas/apps/xmms2_applet/prefs/path</key>
+	<owner>xmms2-applet</owner>
+	<type>string</type>
+	<default></default>
+	<locale name="C">
+		<short>xmms2 path</short>
+		<long>xmms2 path</long>
+	</locale>
+</schema>
+
+</schemalist>
+</gconfschemafile>

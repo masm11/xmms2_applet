@@ -1,0 +1,39 @@
+x widget に名前を付ける。gtkrc で設定できるように。
+  → 不要。class名でやれば良い。
+- memory leak。
+  → xmmsclient の中でリークしてる気がする。保留。
+o メモリを余計に解放してる気がする
+o uninitialized member.
+o xmms2 env. var.
+o xmms2 path を  preferences でも指定する?
+    1. pref
+    2. env
+    3. default
+  かなぁ。
+  pref は指定したらすぐ反映か?
+    xmms2 path が合わなくて接続できない時には、
+    pref で正しく指定したら即接続できて欲しいよね。
+    でも、すでに接続できてる時には…? 切っちゃえばいいか。
+o theme を変えてみる。
+o table じゃなくて vbox にする?
+o 横幅を preferences に。
+o about 作成。
+o pkg-config
+- playtime の signal restart、もう少しゆっくり。
+o 接続できてない時には x を表示。
+
+o preferences
+  o 大きさ
+  o xmms2 path
+  o scroll speed
+
+  Size: [ 48]I
+  +- Title Scroll ------+
+  | Interval:[    ]msec |
+  | Step:    [    ]pixel|
+  +---------------------+
+  +- XMMS2 Path --------+
+  | [] Use Default Only.|
+  |    Path: [         ]|
+  +---------------------+
+  ￣￣￣￣￣￣￣[Close]￣

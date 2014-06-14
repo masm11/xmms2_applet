@@ -1,0 +1,15 @@
+<Root>
+  <popups>
+    <popup name="button3">
+<!--
+      <menuitem name="Play Item" verb="XMMS2AppletPlay" label="_Play"/>
+      <menuitem name="Stop Item" verb="XMMS2AppletStop" label="_Stop"/>
+      <separator/>
+-->
+      <menuitem name="Preferences Item" verb="XMMS2AppletPreferences" label="_Preferences..."
+		pixtype="stock" pixname="gnome-stock-about"/>
+      <menuitem name="About Item" verb="XMMS2AppletAbout" label="_About..."
+		pixtype="stock" pixname="gnome-stock-about"/>
+    </popup>
+  </popups>
+</Root>

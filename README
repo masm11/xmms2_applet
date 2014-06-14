@@ -1,0 +1,105 @@
+XMMS2 Applet
+
+これは
+
+  GNOME パネル用の小さな xmms2 アプレットです。
+
+
+必要なもの
+
+  - XMMS2 0.2DrAlban
+    これより新しくてもだめかも。
+
+  - C99 コンパイラ
+
+  - GNOME 2.12.0
+
+
+インストール方法
+
+  いつも通り、
+
+    ./configure
+    make
+    su
+    make install
+
+  以上。
+
+
+使い方
+
+  まず xmms2d を起動しておきます。
+
+  その後、GNOME パネルから xmms2 applet を起動してください。
+
+  アプレット全体がボタンになっています。クリックすれば再生が始まり、再度
+  クリックすれば停止します。
+
+  起動時に xmms2d がいない場合、または使用中に xmms2d が落ちた場合、
+  定期的に xmms2d への接続を試みていますので、xmms2d を起動すればすぐに
+  接続されます。
+
+
+Preferences
+
+  Size: アプレットの大きさ
+
+    パネルが横方向の場合はアプレットの横幅、パネルが縦方向の場合はアプレット
+    の高さになります。
+
+  Title Scroll: 曲名のスクロールに関する設定
+
+    曲名は、一定時間ごとに右から左へ一定ドット数だけ移動します。この時間と
+    ドット数が指定できます。
+
+    スクロールの処理はなるべく軽くしてありますが、それでもかなり CPU に負荷
+    がかかります。私のマシンでは 50ミリ秒ごとに 1ドットくらいで丁度良いので
+    すが、非力なマシンでは大きな数値を指定した方が良いでしょう。
+
+  XMMS2 Path: xmms2d との接続に関する設定
+
+    xmms2d に接続する場所を指定してください。xmms2d の -i オプションと同じ
+    ものを指定してください。
+
+    - Use This Path を OFF にした場合
+
+      環境変数 XMMS_PATH やデフォルトのパスを使用して接続します。
+
+    - Use This Path を ON にした場合
+
+      Path: に指定したパスを使用して接続します。環境変数やデフォルトのパス
+      は使用しません。
+
+    普通は OFF にしておけば良いはずです。
+
+
+フォントの設定
+
+  Preferences にはフォントを設定する場所がありません。~/.gtkrc-2.0 で設定
+  してください。
+
+  サンプルを以下に示します。
+
+      style "xmms2-title"
+      {
+          font_name = "Sans Serif 12"
+      }
+      widget "*.xmms2-applet-button.*.AppScrolledText" style "xmms2-title"
+      
+      style "xmms2-playtime"
+      {
+          font_name = "Sans Serif 12"
+      }
+      widget "*.xmms2-applet-button.*.GtkLabel" style "xmms2-playtime"
+
+
+著作権など
+
+  このソフトウェアおよびその付属物の著作権は原野裕樹が保持します。
+  ライセンスは GPL2 とします。GPL2 に従う限り、自由にしてください。
+
+
+作者
+
+  原野裕樹 <masm@flowernet.gr.jp>
